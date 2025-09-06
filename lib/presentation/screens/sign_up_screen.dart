@@ -1,6 +1,7 @@
 import 'package:chat_app/core/constants/app_colors.dart';
 import 'package:chat_app/core/constants/app_text_styles.dart';
 import 'package:chat_app/presentation/screens/login_screen.dart';
+import 'package:chat_app/presentation/screens/profile_setup_page.dart';
 import 'package:chat_app/presentation/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
@@ -141,7 +142,10 @@ class _SignupScreenState extends State<SignupScreen> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    onPressed: (){},
+                    onPressed: (){
+                      Navigator.push( context,
+                      MaterialPageRoute(builder: (context) => const ProfileSetupScreen()));
+                    },
                     child: Text(
                       "Sign Up",
                       style: AppTextStyles.body.copyWith(

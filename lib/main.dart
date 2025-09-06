@@ -1,5 +1,6 @@
 
 import 'package:chat_app/presentation/screens/login_screen.dart';
+import 'package:chat_app/presentation/screens/main_app_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: LoginScreen(),
+      home: const LoginScreen(),
     );
   }
 }
